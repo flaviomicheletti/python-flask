@@ -2,7 +2,7 @@ Flask Repos
 ===
 
 
-+ [Hello World](https://github.com/flask-collection/hello-world)
++ [Hello World](/hello-world)
 + [Adicionando Modelo](https://github.com/flask-collection/model-database)
 + [Definindo estrutura: Modelo](https://github.com/flask-collection/separando-model)
 + [Definindo estrutura: Configurações](https://github.com/flask-collection/separando-config)
