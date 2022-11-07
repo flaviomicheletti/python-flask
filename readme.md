@@ -1,6 +1,4 @@
-Flask Repos
-===
-
+# Flask Repos
 
 + [Hello World](/hello-world)
 + [Adicionando Modelo](/model-database)
@@ -11,7 +9,7 @@ Flask Repos
 + [Definindo estrutura: Módulos](/modulos)
 + [Definindo Esquema: Multi Database](/multi-database)
 
-Repositórios de exemplo do próprio [Flask](https://github.com/mitsuhiko/flask/tree/master/examples)
+Repositórios de exemplo do próprio [Flask](https://github.com/mitsuhiko/flask/tree/master/examples):
 
 + [flaskr](/flaskr)
 + [blueprintexample](/blueprintexample)
@@ -19,18 +17,13 @@ Repositórios de exemplo do próprio [Flask](https://github.com/mitsuhiko/flask/
 + [minitwit](/minitwit)
 + [persona](/persona)
 
-
 Tutos:
 
-+ [nossa-cola](/nossa-cola)
 + [discover-flask](/discover-flask)
 + [flask-br](/flask-br)
 
 
-
-
-Ambiente
----
+## Ambiente
 
 Para testar os exemplos...
 
