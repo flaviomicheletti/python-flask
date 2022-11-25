@@ -1,19 +1,6 @@
 # Flask Repos
 
-
-
-
-+ [flaskr](/flaskr)
-+ [blueprintexample](/blueprintexample)
-+ [jqueryexample](/jqueryexample)
-+ [minitwit](/minitwit)
-+ [persona](/persona)
-
-Tutos:
-
-+ [discover-flask](/discover-flask)
-+ [flask-br](/flask-br)
-
+Some good examples of using the [Flask framework](https://flask.palletsprojects.com/).
 
 ## Instalation
 
