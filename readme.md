@@ -9,3 +9,9 @@ Some good examples of using the [Flask framework](https://flask.palletsprojects.
 
     python3 -m venv venv
     . venv/bin/activate
+
+## Run
+
+    flask --app foo run
+
+http://127.0.0.1:5000
