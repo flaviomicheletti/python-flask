@@ -4,7 +4,7 @@ from flask import Flask
 app = Flask(__name__)
 
 #
-# /, /foo e /dummy apontam para 'home'
+# /, /foo e /dummy they point to 'home'
 #
 @app.route("/")
 @app.route("/foo")
