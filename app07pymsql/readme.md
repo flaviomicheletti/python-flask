@@ -1,6 +1,4 @@
-CRUD
-===
-
+# pymysql CRUD
 
     $ python
     >>> from flask import Flask
@@ -14,7 +12,7 @@ Limpando a base com `truncate table, não foi preciso aplicar o "commit":
     0
 
 
-__Create (insert):__
+Create (insert):
 
     >>> cursor.execute("INSERT INTO user VALUES(%s, %s, %s)", (1, 'flavio', 'flavio@email'))
     1
@@ -25,7 +23,7 @@ __Create (insert):__
     >>> connection.commit()
 
 
-__Read (select):__
+Read (select):
 
 
     >>> cursor.execute("SELECT * FROM user")
@@ -38,24 +36,24 @@ __Read (select):__
     (3, 'micheletti', 'micheletti@email.com.br')
 
 
-__Update:__
+Update:
 
->>> cursor.execute("UPDATE user SET email=%s  WHERE id=%s", ('flavio@email.com.br', 1))
-1
->>> cursor.execute("UPDATE user SET email=%s  WHERE id=%s", ('alexandre@email.com.br', 2))
-1
->>> cursor.execute("UPDATE user SET email=%s  WHERE id=%s", ('micheletti@email.com.br', 3))
-1
->>> connection.commit()
+    >>> cursor.execute("UPDATE user SET email=%s  WHERE id=%s", ('flavio@email.com.br', 1))
+    1
+    >>> cursor.execute("UPDATE user SET email=%s  WHERE id=%s", ('alexandre@email.com.br', 2))
+    1
+    >>> cursor.execute("UPDATE user SET email=%s  WHERE id=%s", ('micheletti@email.com.br', 3))
+    1
+    >>> connection.commit()
 
 
 
-__Delete:__
+Delete:
 
->>> cursor.execute("DELETE FROM user WHERE id=%s", (1))
-1
->>> cursor.execute("DELETE FROM user WHERE id=%s", (2))
-1
->>> cursor.execute("DELETE FROM user WHERE id=%s", (3))
-1
->>> connection.commit()
+    >>> cursor.execute("DELETE FROM user WHERE id=%s", (1))
+    1
+    >>> cursor.execute("DELETE FROM user WHERE id=%s", (2))
+    1
+    >>> cursor.execute("DELETE FROM user WHERE id=%s", (3))
+    1
+    >>> connection.commit()

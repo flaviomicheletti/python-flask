@@ -1,5 +1,4 @@
-pymysql
-===
+# pymysql
 
 Experimentando [pymysql](https://github.com/PyMySQL/PyMySQL) no terminal.
 

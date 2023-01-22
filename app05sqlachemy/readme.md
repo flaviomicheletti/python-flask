@@ -1,5 +1,4 @@
-CRUD com SQLAlchemy
-===
+# CRUD com SQLAlchemy
 
 Considere o arquivo abaixo como sendo sua aplicação.
 
