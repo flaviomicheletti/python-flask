@@ -1,6 +1,6 @@
-#################
-#### imports ####
-#################
+#
+# imports
+#
 
 from flask import render_template, Blueprint, \
     request, flash, redirect, url_for   # pragma: no cover
@@ -10,9 +10,9 @@ from .forms import MessageForm   # pragma: no cover
 from project import db   # pragma: no cover
 from project.models import BlogPost   # pragma: no cover
 
-################
-#### config ####
-################
+#
+# config
+#
 
 home_blueprint = Blueprint(
     'home', __name__,
@@ -20,9 +20,9 @@ home_blueprint = Blueprint(
 )   # pragma: no cover
 
 
-################
-#### routes ####
-################
+#
+# routes
+#
 
 # use decorators to link the function to a url
 @home_blueprint.route('/', methods=['GET', 'POST'])   # pragma: no cover
