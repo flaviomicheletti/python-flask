@@ -1,5 +1,4 @@
-SQLAlchemy
-===
+# SQLAlchemy
 
 Para utilizar o [SQLAlchemy](http://www.sqlalchemy.org/) em seu projeto Flask 
 você terá que optar entre a instalação pura (plan) e utilização do SQLAlchemy 
@@ -96,8 +95,7 @@ No MySQL foi criado a seguinte tabela...
 
 
 
-Documentação
----
+## Documentação
 
 - [Flask-SQLAlchemy](http://flask-sqlalchemy.pocoo.org/2.0/)
 - [SQLAlchemy in Flask](http://flask.pocoo.org/docs/0.10/patterns/sqlalchemy/)
