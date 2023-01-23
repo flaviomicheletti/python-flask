@@ -5,15 +5,14 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask("foo")
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///test.db"
+app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://postgres:postgres@localhost:5438/postgres"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 db = SQLAlchemy(app)
 
 
-class User(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    username = db.Column(db.String(80), unique=True)
-    email = db.Column(db.String(120), unique=True)
+class Users(db.Model):
+    user_id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(80), unique=True)
 
     def __init__(self, username, email):
         self.username = username
@@ -23,10 +22,10 @@ class User(db.Model):
         return "<User %r>" % self.username
 
 
-@app.route("/")
-def hello_model():
-    user = User.query.filter_by(id=1).first()
-    return "Hello user %s!" % user.username
+@app.route("/<id>")
+def hello_model(id):
+    user = Users.query.filter_by(user_id=id).first()
+    return "Hello user %s!" % user.name
 
 
 """

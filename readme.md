@@ -5,10 +5,26 @@
 Some good examples of using the [Flask framework](https://flask.palletsprojects.com/).
 
 
-## Instalation
+## Enviroment
 
-    python3 -m venv venv
-    . venv/bin/activate
+    cd folder/
+    python3 -m venv .venv && . .venv/bin/activate
+
+## Install
+
+    pip install -r requirements.txt
+    pip install psycopg2-binary
+
+## Deps
+
+    Flask
+    Flask-SQLAlchemy
+    itsdangerous
+    Jinja2
+    MarkupSafe
+    SQLAlchemy
+    Werkzeug
+
 
 ## Run
 
