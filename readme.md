@@ -31,3 +31,11 @@ Some good examples of using the [Flask framework](https://flask.palletsprojects.
     flask --app foo run
 
 http://127.0.0.1:5000
+
+
+## Tests
+
+    # na pasta raiz
+    clear && coverage run -m unittest discover -v
+    coverage report -m
+    coverage html
