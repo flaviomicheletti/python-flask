@@ -8,7 +8,7 @@ app = Flask(__name__)
 def get_languages():
     # cursor = conn.cursor()
     # cursor.close()
-    return jsonify([{}, {}])
+    return jsonify([])
 
 
 # if __name__ == "__main__":
