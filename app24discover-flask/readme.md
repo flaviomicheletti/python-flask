@@ -1,5 +1,33 @@
 # Discover Flask
 
+
+    clear && coverage run -m unittest discover -v
+
+    postgresql://user:mypassword@localhost/database
+    test_index (tests.test_basic.FlaskTestCase) ... ok
+    test_main_route_requires_login (tests.test_basic.FlaskTestCase) ... ok
+    test_posts_show_up_on_main_page (tests.test_basic.FlaskTestCase) ... ok
+    test_welcome_route_works_as_expected (tests.test_basic.FlaskTestCase) ... ok
+    test_user_can_post (tests.test_blog.BlogPostTests) ... ok
+    test_check_password (tests.test_users.TestUser) ... ok
+    test_get_by_id (tests.test_users.TestUser) ... ok
+    test_incorrect_user_registeration (tests.test_users.TestUser) ... ok
+    test_user_registeration (tests.test_users.TestUser) ... ok
+    test_correct_login (tests.test_users.UserViewsTests) ... ok
+    test_incorrect_login (tests.test_users.UserViewsTests) ... ok
+    test_login_page_loads (tests.test_users.UserViewsTests) ... ok
+    test_logout (tests.test_users.UserViewsTests) ... ok
+    test_logout_route_requires_login (tests.test_users.UserViewsTests) ... ok
+
+    ----------------------------------------------------------------------
+    Ran 14 tests in 6.799s
+
+    OK
+
+
+---
+
+
 Full Stack Web Development with Flask.
 
 **http://discoverflask.com**
