@@ -6,8 +6,10 @@ class BaseConfig(object):
     DEBUG = False
     # shortened for readability
     SECRET_KEY = '\xbf\xb0\x11\xb1\xcd\xf9\xba\x8bp\x0c...'
-    SQLALCHEMY_DATABASE_URI = os.environ['DATABASE_URL']
+    # SQLALCHEMY_DATABASE_URI = os.environ['DATABASE_URL']
+    SQLALCHEMY_DATABASE_URI = "postgresql://user:mypassword@localhost/database" 
     print(SQLALCHEMY_DATABASE_URI)
+   
 
 
 class TestConfig(BaseConfig):

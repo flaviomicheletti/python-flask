@@ -1,23 +1,19 @@
-#################
-#### imports ####
-#################
-
 from flask import Flask
-from flask.ext.sqlalchemy import SQLAlchemy
-from flask.ext.bcrypt import Bcrypt
-from flask.ext.login import LoginManager
+from flask_sqlalchemy import SQLAlchemy
+from flask_bcrypt import Bcrypt
+from flask_login import LoginManager
 import os
 
-################
-#### config ####
-################
 
 app = Flask(__name__)
 bcrypt = Bcrypt(app)
 login_manager = LoginManager()
 login_manager.init_app(app)
-app.config.from_object(os.environ['APP_SETTINGS'])
+app.config.from_object("config.TestConfig")# os.environ["APP_SETTINGS"]
 db = SQLAlchemy(app)
+
+
+
 
 from project.users.views import users_blueprint
 from project.home.views import home_blueprint
@@ -27,7 +23,7 @@ app.register_blueprint(users_blueprint)
 app.register_blueprint(home_blueprint)
 
 
-from models import User
+from project.models import User
 
 login_manager.login_view = "users.login"
 
