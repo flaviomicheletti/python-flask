@@ -1,4 +1,0 @@
-Flask
-pytest
-pytest-cov
-pytest-html

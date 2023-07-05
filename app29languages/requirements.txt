@@ -1,7 +1,0 @@
-Flask
-Flask
-pytest
-pytest-cov
-pytest-html
-psycopg==3.1.8
-psycopg2-binary==2.9.5

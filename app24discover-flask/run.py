@@ -1,4 +1,0 @@
-from project import app
-
-
-
