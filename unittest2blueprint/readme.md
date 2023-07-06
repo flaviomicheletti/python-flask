@@ -8,6 +8,11 @@ __run tests:__
 
     python -m unittest discover -v
 
+__coverage:__
+
+    coverage run --source=./ -m unittest discover
+    coverage report -m && coverage html
+
 __test:__
 
     curl -X GET http://localhost:5000/
