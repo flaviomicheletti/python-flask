@@ -6,21 +6,40 @@ This repository contains a collection of examples showcasing the usage of
 the [Flask framework](https://flask.palletsprojects.com/). Each application 
 in this repository is independent and has its own `requirements.txt` file.
 
+
 ## Environment Setup
 
 To set up the environment, follow these steps:
 
 1. Create a virtual environment:
 
-   ```bash
    python3 -m venv .venv
-   ```
 
 2. Activate the virtual environment:
 
-    ```bash
-    python3 -m venv .venv && . .venv/bin/activate
-    ```
+   . .venv/bin/activate
+
+3. All in one
+
+   python3 -m venv .venv && . .venv/bin/activate
+
+
+## In each application
+
+run:
+
+    flask --app main run
+
+run tests:
+
+    python -m unittest discover -v
+
+coverage:
+
+    coverage run --source=./ -m unittest discover
+    coverage report -m && coverage html
+
+
 
 ## Articles
 
