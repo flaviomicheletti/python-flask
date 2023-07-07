@@ -28,3 +28,14 @@ with app.app_context():
     # Print the retrieved languages
     for language in all_languages:
         print(language.name)
+
+"""
+print app.py
+
+English
+Spanish
+French
+German
+Italian
+"""
+
