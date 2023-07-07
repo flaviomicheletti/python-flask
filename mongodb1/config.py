@@ -12,5 +12,5 @@ def monogodb_uri():
     username = os.getenv("mongodb_username")
     password = os.getenv("mongodb_password")
     uri = f"mongodb://{username}:{password}@{host}:{port}/"
-    print(uri)
+    # print(uri)
     return uri
