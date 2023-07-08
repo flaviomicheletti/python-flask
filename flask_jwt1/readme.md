@@ -15,3 +15,9 @@
     curl --request GET \
       --url http://localhost:5002/secure-data \
       --header 'authorization: Bearer <access_token>'
+
+
+# 100% coverage
+
+    coverage run -m unittest discover
+    coverage report -m &&  coverage html
